@@ -2,6 +2,10 @@
 
 @section('content')
 
+    @if(session('message'))
+        <div class="alert alert-success">{{ session('message') }}</div>
+    @endif
+
     <h1>Users</h1>
 
     <table class="table">
